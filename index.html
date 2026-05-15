@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brand</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Merriweather:wght@400;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav id="mainNav">
+    <a class="nav-logo" href="/">AGENTEX <span class="logo-ai">AI</span></a>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <button class="nav-hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a class="mobile-link" href="#about" onclick="closeMobile()">About</a>
+    <a class="mobile-link" href="#services" onclick="closeMobile()">Services</a>
+    <a class="mobile-link" href="#contact" onclick="closeMobile()">Contact</a>
+  </div>
+  <div class="mobile-overlay" id="mobileOverlay" onclick="closeMobile()"></div>
+
+  <!-- ========== HERO + BRAND STRIP + DASHBOARD (one section) ========== -->
+  <section class="hero-section">
+
+  <div class="hero">
+
+    <!-- Background image -->
+    <div class="hero-bg"></div>
+
+    <!-- Hero content -->
+    <div class="hero-content">
+      <div class="hero-badge">AI System Acquisition</div>
+      <h1 class="hero-headline">
+        What Takes <span class="hl-warm">You 1 hour</span> to Complete<br>
+        Takes an <span class="hl-teal stroke-wrap">AI Agent 8 Minutes.<svg class="paint-stroke" viewBox="0 0 300 14" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6C45 2.5 110 1.5 175 3.5C225 5 268 4 296 5.5C296 8 294 10 291 9.5C263 8 220 9.5 168 8C103 6 40 9.5 4 12C3 9.5 3 8 4 6Z" fill="currentColor" opacity="0.65"/></svg></span>
+      </h1>
+      <p class="hero-sub">No matter what you do or what industry you're in — if it's repetitive, manual, and time-consuming, we automate it. Custom AI agents built for your exact operation, running 24/7 under your full control.</p>
+      <div class="hero-ctas">
+        <a class="btn-primary" href="#contact">Book Your Strategy Call</a>
+      </div>
+      <a class="hero-secondary-cta" href="#process">See how it works →</a>
+
+    </div>
+
+  </div>
+
+  <p class="dash-pre-headline">Built for operators who are tired of being the bottleneck.</p>
+
+  <!-- ========== DASHBOARD ========== -->
+  <div class="dash-section">
+    <div class="dash-card">
+
+      <!-- TOP: Founder card + Stats 2x2 -->
+      <div class="dash-top">
+
+        <!-- FOUNDER CARD -->
+        <div class="founder-card">
+          <div class="founder-photo-col">
+            <img src="assets/headshot22.png" alt="Angel John Renteria" class="founder-photo">
+          </div>
+          <div class="founder-main">
+
+            <!-- Workflow + connector + app icons -->
+            <div class="wf-area">
+              <div class="wf-list">
+                <div class="wf-item">
+                  <div class="wf-check"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                  <div class="wf-labels"><span class="wf-t1">Agents running inside your existing tools</span></div>
+                </div>
+                <div class="wf-item">
+                  <div class="wf-check"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                  <div class="wf-labels"><span class="wf-t1">Zero per-seat fees — you own it</span></div>
+                </div>
+                <div class="wf-item">
+                  <div class="wf-check"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+                  <div class="wf-labels"><span class="wf-t1">Live within 72 hours, monitored ongoing</span></div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Footer -->
+            <div class="founder-footer">
+              <span class="founder-sig">Angel John Renteria</span>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Mobile-only founder info — between photo row and stats -->
+        <div class="founder-mobile-info">
+          <span class="founder-sig">Angel John Renteria</span>
+        </div>
+
+        <!-- STATS + ENTERPRISE BADGE (right column) -->
+        <div class="dash-right">
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-watermark"><svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+              <p class="stat-num">$2.3M+</p>
+              <p class="stat-label">Saved in Labor Costs</p>
+            </div>
+            <div class="stat-card">
+              <div class="stat-watermark"><svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+              <p class="stat-num">40+</p>
+              <p class="stat-label">Hours Reclaimed Per Client/Month</p>
+            </div>
+            <div class="stat-card">
+              <div class="stat-watermark"><svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></div>
+              <p class="stat-num">120+</p>
+              <p class="stat-label">Businesses Automated</p>
+            </div>
+            <div class="stat-card">
+              <div class="stat-watermark"><svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+              <p class="stat-num">72 hrs</p>
+              <p class="stat-label">Average Deploy Time</p>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <!-- ========== SOCIAL PROOF BAR ========== -->
+  <p class="social-proof-bar">120+ systems deployed across 12+ industries</p>
+
+  </section><!-- end .hero-section -->
+
+  <!-- ========== WHO THIS IS FOR SECTION ========== -->
+  <section class="whofor-section">
+    <div class="whofor-inner">
+
+      <div class="whofor-header">
+        <span class="section-pill">Who This Is For</span>
+        <h2 class="whofor-headline">Built For Businesses That Want To <em class="hl-teal stroke-wrap">Operate Smarter<svg class="paint-stroke" viewBox="0 0 300 14" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6C45 2.5 110 1.5 175 3.5C225 5 268 4 296 5.5C296 8 294 10 291 9.5C263 8 220 9.5 168 8C103 6 40 9.5 4 12C3 9.5 3 8 4 6Z" fill="currentColor" opacity="0.65"/></svg></em></h2>
+        <p class="whofor-sub">Helping professionals reduce repetitive work, improve efficiency, and scale operations through intelligent systems and automation.</p>
+      </div>
+
+      <div class="whofor-grid">
+
+        <!-- LEFT: Pain Points -->
+        <div class="whofor-left">
+          <h3 class="pain-headline">Still Spending Too Much Time<br><em class="hl-warm">Running The Business?</em></h3>
+          <p class="pain-sub">Most businesses don't need more hours or employees.<br>They need systems that remove friction and give back time.</p>
+          <ul class="pain-list">
+            <li><span class="x-icon">✕</span>Spending too much time on repetitive daily tasks</li>
+            <li><span class="x-icon">✕</span>Losing opportunities due to inconsistent follow-up</li>
+            <li><span class="x-icon">✕</span>Spending more time managing than growing</li>
+<li><span class="x-icon">✕</span>Needing more staff just to maintain operations</li>
+            <li><span class="x-icon">✕</span>Working harder without creating more freedom</li>
+          </ul>
+          <p class="pain-tagline"><em>Streamlined systems create scalable businesses.</em></p>
+        </div>
+
+        <!-- RIGHT: Profession Cards 2×4 -->
+        <div class="whofor-right">
+          <div class="prof-carousel">
+          <div class="prof-grid">
+
+            <div class="prof-card">
+              <div class="prof-watermark-icon"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+          <h4 class="prof-title">Real Estate Agents</h4>
+              <p class="prof-desc">Automate follow-up, scheduling, lead management, and client communication.</p>
+            </div>
+
+            <div class="prof-card">
+              <div class="prof-watermark-icon"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div>
+          <h4 class="prof-title">Small Business Owners</h4>
+              <p class="prof-desc">Simplify operations and reduce manual workload without increasing overhead.</p>
+            </div>
+
+            <div class="prof-card">
+              <div class="prof-watermark-icon"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+          <h4 class="prof-title">Solo Entrepreneurs</h4>
+              <p class="prof-desc">Scale more efficiently without adding more hours to your schedule.</p>
+            </div>
+
+            <div class="prof-card">
+              <div class="prof-watermark-icon"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+          <h4 class="prof-title">Sales Professionals</h4>
+              <p class="prof-desc">Streamline outreach, follow-ups, CRM updates, and pipeline management.</p>
+            </div>
+
+            <div class="prof-card">
+              <div class="prof-watermark-icon"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+          <h4 class="prof-title">Marketing Agencies</h4>
+              <p class="prof-desc">Automate onboarding, reporting, fulfillment, and client communication workflows.</p>
+            </div>
+
+            <div class="prof-card">
+              <div class="prof-watermark-icon"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="6"/><line x1="12" y1="18" x2="12" y2="22"/><line x1="4.93" y1="4.93" x2="7.76" y2="7.76"/><line x1="16.24" y1="16.24" x2="19.07" y2="19.07"/><circle cx="12" cy="12" r="4"/></svg></div>
+          <h4 class="prof-title">Consultants &amp; Service Providers</h4>
+              <p class="prof-desc">Reduce repetitive admin work and focus more time on delivering value.</p>
+            </div>
+
+            <div class="prof-card">
+              <div class="prof-watermark-icon"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+          <h4 class="prof-title">Contractors &amp; Home Services</h4>
+              <p class="prof-desc">Simplify estimates, scheduling, inquiries, and customer coordination.</p>
+            </div>
+
+            <div class="prof-card">
+              <div class="prof-watermark-icon"><svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
+          <h4 class="prof-title">Healthcare &amp; Clinics</h4>
+              <p class="prof-desc">Improve scheduling, intake processes, reminders, and administrative efficiency.</p>
+            </div>
+
+          </div>
+          </div><!-- end prof-grid -->
+          <div class="carousel-controls">
+            <button class="carousel-btn carousel-prev" aria-label="Previous">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <div class="carousel-dots"></div>
+            <button class="carousel-btn carousel-next" aria-label="Next">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+          </div><!-- end prof-carousel -->
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== COMPARE SECTION ========== -->
+  <section class="compare-section">
+    <div class="compare-inner">
+
+      <div class="compare-header">
+        <p class="compare-eyebrow">The Opportunity</p>
+        <h2 class="compare-headline">
+          It's Not About <em class="hl-warm">Changing What</em> You're Already Doing,<br>
+          It's About <em class="hl-teal stroke-wrap">Optimizing How<svg class="paint-stroke" viewBox="0 0 300 14" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6C45 2.5 110 1.5 175 3.5C225 5 268 4 296 5.5C296 8 294 10 291 9.5C263 8 220 9.5 168 8C103 6 40 9.5 4 12C3 9.5 3 8 4 6Z" fill="currentColor" opacity="0.65"/></svg></em> You Do It.
+        </h2>
+      </div>
+
+      <div class="compare-grid">
+
+        <!-- LEFT: Most Operators -->
+        <div class="compare-col col-operators">
+          <p class="col-label">Old Way</p>
+
+          <div class="task-card">
+            <ul class="task-list">
+              <li>Buried in emails and notifications</li>
+              <li>Hours lost to reports and admin</li>
+              <li>Manual repetitive work</li>
+              <li>Constant interruptions and chaos</li>
+            </ul>
+          </div>
+
+          <ul class="problem-list">
+            <li><span class="x-icon">✕</span>Growth creates more stress</li>
+            <li><span class="x-icon">✕</span>Teams stay reactive</li>
+            <li><span class="x-icon">✕</span>Productivity slows down</li>
+            <li><span class="x-icon">✕</span>Owners stay stuck operating</li>
+          </ul>
+        </div>
+
+        <!-- RIGHT: The AGENTEX AI Solution -->
+        <div class="compare-col col-solution">
+          <p class="col-label">The AGENTEX AI Solution</p>
+
+          <div class="task-card">
+            <ul class="task-list task-list--teal">
+              <li>Organized communication and workflows</li>
+              <li>Reporting completed in minutes</li>
+              <li>SOP-driven automation systems</li>
+              <li>More execution, less chaos</li>
+            </ul>
+          </div>
+
+          <ul class="solution-list">
+            <li><span class="check-icon">✓</span>Scale without increasing payroll</li>
+            <li><span class="check-icon">✓</span>More consistency across operations</li>
+            <li><span class="check-icon">✓</span>Reduced operational friction</li>
+            <li><span class="check-icon">✓</span>More time focused on growth</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <p class="compare-tagline">Operational Excellence Through Intelligent Systems.</p>
+
+    </div>
+  </section>
+
+    <!-- ========== PROCESS SECTION ========== -->
+  <section class="process-section">
+    <div class="process-inner">
+
+      <div class="process-header">
+        <span class="process-pill">The Process</span>
+        <h2 class="process-headline">How We Help Businesses <em class="hl-teal">Operate Smarter</em> In A Fast-Moving World</h2>
+        <p class="process-sub">From initial audit to full deployment — here's exactly how we build for you.</p>
+      </div>
+
+      <div class="process-steps">
+
+        <div class="process-step">
+          <div class="step-top">
+            <p class="step-num">01</p>
+            <div class="step-icon">
+              <svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="step-title">Audit & Map</h3>
+          <ul class="step-list">
+            <li>Analyze your current workflows and operations</li>
+            <li>Identify repetitive tasks and operational bottlenecks</li>
+            <li>Map areas where automation creates the highest ROI</li>
+            <li>Build a strategy around your existing processes</li>
+          </ul>
+        </div>
+
+        <div class="process-step">
+          <div class="step-top">
+            <p class="step-num">02</p>
+            <div class="step-icon">
+              <svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/>
+                <line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/>
+                <line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/>
+                <line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/>
+                <line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="step-title">Design & Build</h3>
+          <ul class="step-list">
+            <li>Custom agents built around your current tech stack</li>
+            <li>Integrates with CRM, email, payments, and databases</li>
+            <li>No major operational overhaul required to get started</li>
+            <li>Systems designed to work with tools you already use</li>
+          </ul>
+        </div>
+
+        <div class="process-step">
+          <div class="step-top">
+            <p class="step-num">03</p>
+            <div class="step-icon">
+              <svg width="70" height="70" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+                <path d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
+                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
+                <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
+              </svg>
+            </div>
+          </div>
+          <h3 class="step-title">Deploy & Scale</h3>
+          <ul class="step-list">
+            <li>Systems deployed and operational within days</li>
+            <li>Live monitoring and performance visibility included</li>
+            <li>Ongoing optimization as your business evolves</li>
+            <li>Scale operations without increasing complexity</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== AGENT SHOWCASE ========== -->
+  <section class="agent-showcase-section">
+    <div class="process-inner">
+
+      <div class="process-header">
+        <span class="process-pill">Agent Showcase</span>
+        <h2 class="process-headline">Your Business, Running <em class="hl-teal">On Autopilot</em></h2>
+        <p class="process-sub agent-showcase-sub">Three core autonomous systems. Deployed in your business. Running 24/7 with security and peace of mind.</p>
+      </div>
+
+      <div class="agent-carousel-wrap">
+      <div class="agent-icon-grid">
+
+        <div class="agent-icon-card agent-card-expanded">
+          <div class="agent-icon-box">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+          </div>
+          <p class="agent-icon-label">Customer Acquisition</p>
+          <ul class="agent-card-bullets">
+            <li><span class="acb-check">✓</span>Never Lose Another Lead</li>
+            <li><span class="acb-check">✓</span>Never Miss Another Phone Call</li>
+            <li><span class="acb-check">✓</span>Skyrocket Conversion Rates</li>
+          </ul>
+        </div>
+
+        <div class="agent-icon-card agent-card-expanded">
+          <div class="agent-icon-box">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <p class="agent-icon-label">Appointment Booking</p>
+          <ul class="agent-card-bullets">
+            <li><span class="acb-check">✓</span>Book Meetings on Autopilot</li>
+            <li><span class="acb-check">✓</span>Automated Nurturing Process</li>
+            <li><span class="acb-check">✓</span>Fill Your Calendar Faster</li>
+          </ul>
+        </div>
+
+        <div class="agent-icon-card agent-card-expanded">
+          <div class="agent-icon-box">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <p class="agent-icon-label">Communication Support</p>
+          <ul class="agent-card-bullets">
+            <li><span class="acb-check">✓</span>Reclaim 3+ Hours Every Day</li>
+            <li><span class="acb-check">✓</span>Understand any Email in Seconds</li>
+            <li><span class="acb-check">✓</span>Send Professional Replies in One Click</li>
+          </ul>
+        </div>
+
+        <div class="agent-icon-card agent-card-expanded">
+          <div class="agent-icon-box">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <p class="agent-icon-label">Client Onboarding</p>
+          <ul class="agent-card-bullets">
+            <li><span class="acb-check">✓</span>Onboard Clients in Minutes</li>
+            <li><span class="acb-check">✓</span>Create a Flawless First Experience</li>
+            <li><span class="acb-check">✓</span>Faster Time to Value</li>
+          </ul>
+        </div>
+
+        <div class="agent-icon-card agent-card-expanded">
+          <div class="agent-icon-box">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <p class="agent-icon-label">Invoice &amp; Payment Collection</p>
+          <ul class="agent-card-bullets">
+            <li><span class="acb-check">✓</span>Get Paid Faster</li>
+            <li><span class="acb-check">✓</span>Reduce Late Payments</li>
+            <li><span class="acb-check">✓</span>Cash Flow on Autopilot</li>
+          </ul>
+        </div>
+
+        <div class="agent-icon-card agent-card-expanded">
+          <div class="agent-icon-box">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <p class="agent-icon-label">Reporting &amp; Admin Tasks</p>
+          <ul class="agent-card-bullets">
+            <li><span class="acb-check">✓</span>Eliminate Repetitive Admin</li>
+            <li><span class="acb-check">✓</span>Always Up-to-Date Reports</li>
+            <li><span class="acb-check">✓</span>Reclaim Hours Every Week</li>
+          </ul>
+        </div>
+
+        <div class="agent-icon-card">
+          <div class="agent-icon-box">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </div>
+          <p class="agent-icon-label">CRM Updates</p>
+        </div>
+
+        <div class="agent-icon-card">
+          <div class="agent-icon-box">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <p class="agent-icon-label">Customer Support</p>
+        </div>
+
+        <div class="agent-icon-card">
+          <div class="agent-icon-box">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <p class="agent-icon-label">Performance Monitoring</p>
+        </div>
+
+        <div class="agent-icon-card">
+          <div class="agent-icon-box">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/><path d="M4.93 4.93a10 10 0 0 0 0 14.14"/></svg>
+          </div>
+          <p class="agent-icon-label">Social Media</p>
+        </div>
+
+      </div><!-- end agent-icon-grid -->
+
+      <!-- Mobile carousel controls -->
+      <div class="agent-carousel-controls">
+        <button class="carousel-btn agent-prev" aria-label="Previous">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div class="agent-carousel-dots"></div>
+        <button class="carousel-btn agent-next" aria-label="Next">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+
+      </div><!-- end agent-carousel-wrap -->
+
+      <div style="text-align:center; margin-top: 32px;">
+        <a class="explore-more-btn" href="#contact">Explore All Agent Types →</a>
+      </div>
+
+    </div>
+  </section>
+
+    <!-- ========== CASE STUDY SECTION ========== -->
+  <section class="casestudy-section">
+    <div class="casestudy-inner">
+
+      <div class="casestudy-header">
+        <span class="section-pill">Client Story</span>
+        <h2 class="casestudy-headline">Real Results From <em class="hl-teal stroke-wrap">Real Businesses<svg class="paint-stroke" viewBox="0 0 300 14" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6C45 2.5 110 1.5 175 3.5C225 5 268 4 296 5.5C296 8 294 10 291 9.5C263 8 220 9.5 168 8C103 6 40 9.5 4 12C3 9.5 3 8 4 6Z" fill="currentColor" opacity="0.65"/></svg></em></h2>
+      </div>
+
+      <div class="casestudy-card">
+
+        <!-- Left: dark identity card -->
+        <div class="cs-left-card">
+          <div class="cs-avatar">MV</div>
+          <p class="cs-name">Marcus V.</p>
+          <p class="cs-role">Digital Marketing Agency Owner</p>
+          <blockquote class="cs-pull-quote">"I used to spend every Monday writing reports for clients. Now that system runs itself and I'm in growth mode by 8am."</blockquote>
+        </div>
+
+        <!-- Right: outcome metrics -->
+        <div class="cs-right-panel">
+          <div class="cs-outcomes">
+            <div class="cs-outcome">
+              <p class="cs-outcome-stat">11 min</p>
+              <p class="cs-outcome-label">Client Reports</p>
+              <p class="cs-outcome-before">Previously 2–3 hrs each</p>
+            </div>
+            <div class="cs-outcome-divider"></div>
+            <div class="cs-outcome">
+              <p class="cs-outcome-stat">4 min</p>
+              <p class="cs-outcome-label">Lead Response Time</p>
+              <p class="cs-outcome-before">Was 6+ hours on average</p>
+            </div>
+            <div class="cs-outcome-divider"></div>
+            <div class="cs-outcome">
+              <p class="cs-outcome-stat">47 hrs</p>
+              <p class="cs-outcome-label">Reclaimed Monthly</p>
+              <p class="cs-outcome-before">Shifted from admin to growth</p>
+            </div>
+          </div>
+
+          <!-- Story paragraph -->
+          <p class="cs-story">Marcus ran a 6-person agency where every Monday morning disappeared into writing performance reports for clients. AGENTEX built a reporting agent that pulls live data, formats it to brand standards, and emails each client before 8am — zero input required. Within 30 days, his team had shifted those hours entirely into strategy and new business.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- ========== PRICING ========== -->
+  <section class="pricing-section">
+    <div class="process-inner">
+
+      <div class="process-header">
+        <span class="process-pill">Pricing</span>
+        <h2 class="process-headline">Simple, <em class="hl-teal">Transparent</em> Pricing</h2>
+        <p class="process-sub">No retainers. No bloated agency fees. You pay for systems that actually work.</p>
+      </div>
+
+      <div class="pricing-cards">
+        <div class="process-step">
+          <h3 class="step-title">Starter System</h3>
+          <p class="step-desc">Starting at <strong>$[X]/month</strong></p>
+          <ul class="step-list">
+            <li>1–2 custom AI agents</li>
+            <li>Integration with your existing tools</li>
+            <li>30-day build and deployment</li>
+            <li>Monthly performance review</li>
+          </ul>
+        </div>
+        <div class="process-step">
+          <h3 class="step-title">Growth System</h3>
+          <p class="step-desc">Starting at <strong>$[X]/month</strong></p>
+          <ul class="step-list">
+            <li>3–5 custom AI agents</li>
+            <li>Full workflow audit and mapping</li>
+            <li>Priority build and deployment</li>
+            <li>Weekly performance optimization</li>
+          </ul>
+        </div>
+        <div class="process-step">
+          <h3 class="step-title">Full Operation</h3>
+          <p class="step-desc">Custom pricing</p>
+          <ul class="step-list">
+            <li>Unlimited agent deployment</li>
+            <li>Dedicated system architect</li>
+            <li>Ongoing optimization and scaling</li>
+            <li>White-glove onboarding and support</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== FAQ ========== -->
+  <section class="faq-section">
+    <div class="process-inner">
+
+      <div class="process-header">
+        <span class="process-pill">FAQ</span>
+        <h2 class="process-headline">Questions We <em class="hl-teal">Always Hear</em></h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Do I need to be technical to use this?<span class="faq-icon">+</span></button>
+          <div class="faq-a-wrap"><p class="faq-a">No. We handle the entire build. You review the output and approve. That's it.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">How long does it take to get an agent live?<span class="faq-icon">+</span></button>
+          <div class="faq-a-wrap"><p class="faq-a">Most clients see their first agent live within 72 hours of kickoff.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What tools does it integrate with?<span class="faq-icon">+</span></button>
+          <div class="faq-a-wrap"><p class="faq-a">We integrate with your existing stack — CRM, email, Slack, databases, payment systems, and more. No new tools required.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What if I want to change something after it's built?<span class="faq-icon">+</span></button>
+          <div class="faq-a-wrap"><p class="faq-a">All systems are built to be adjusted. We provide ongoing optimization as your operation evolves.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Is this just AI chatbots?<span class="faq-icon">+</span></button>
+          <div class="faq-a-wrap"><p class="faq-a">No. These are operational agents that perform tasks, not just answer questions. They execute workflows inside your real tools.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">What makes AGENTEX different from other AI agencies?<span class="faq-icon">+</span></button>
+          <div class="faq-a-wrap"><p class="faq-a">We're operator-led and builder-driven. Every system is built around your specific operation — not a generic template.</p></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== FINAL CTA ========== -->
+  <!-- ========== FINAL CTA ========== -->
+  <section class="final-cta-section">
+    <span class="hero-badge final-cta-badge-mobile">Don't get left behind</span>
+    <div class="final-cta-portrait">
+      <img src="assets/headshot11.png" alt="Angel John Renteria" class="final-cta-img">
+    </div>
+    <div class="final-cta-content">
+      <span class="hero-badge">Don't get left behind</span>
+      <h2 class="final-cta-headline">Join thousands of businesses reclaiming time with <em class="hl-warm">intelligent agentic workflow automation.</em></h2>
+      <a class="btn-primary" href="#contact">Book Free Strategy Call</a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+
+      <div class="footer-top">
+
+        <!-- Logo -->
+        <div class="footer-brand">
+          <div>
+            <p class="footer-logo-name">AGENTEX <span class="logo-ai">AI</span></p>
+            <p class="footer-logo-sub">PARTNERS</p>
+          </div>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-col">
+          <p class="footer-col-heading">Get in touch</p>
+          <a class="footer-contact-item" href="mailto:support@agentexai.com">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+            support@agentexai.com
+          </a>
+          <a class="footer-contact-item" href="tel:9039999999">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.58 3.58 2 2 0 0 1 3.54 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.18 6.18l.87-.87a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            903-999-9999
+          </a>
+        </div>
+
+        <!-- Resources -->
+        <div class="footer-col">
+          <p class="footer-col-heading">Resources</p>
+          <a class="footer-resource-link" href="#">Terms &amp; Conditions</a>
+          <a class="footer-resource-link" href="#">Privacy Policy</a>
+          <a class="footer-resource-link" href="#">Disclosure</a>
+        </div>
+
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <p class="footer-disclaimer">Agentex AI Partners, LLC provides AI automation, workflow systems, and software integration services. We do not provide legal, financial, or licensed professional advice. Results may vary based on implementation, operations, and business factors. AI-generated outputs should be reviewed by a human before use.</p>
+
+      <p class="footer-copy">© 2026 Agentex AI Partners, LLC. All rights reserved.</p>
+
+    </div>
+  </footer>
+
+  <script>
+    const nav = document.getElementById('mainNav');
+    const hamburger = document.getElementById('hamburgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const overlay = document.getElementById('mobileOverlay');
+
+    // Nav scroll state
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 80);
+    });
+
+    // Hamburger toggle
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      overlay.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen);
+      mobileMenu.setAttribute('aria-hidden', !isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    function closeMobile() {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('open');
+      overlay.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      mobileMenu.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 1024) closeMobile();
+    });
+
+    // ---- FAQ Accordion ----
+    document.querySelectorAll('.faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+
+    // ---- Agent showcase carousel (mobile only) ----
+    (function() {
+      const grid     = document.querySelector('.agent-icon-grid');
+      const prevBtn  = document.querySelector('.agent-prev');
+      const nextBtn  = document.querySelector('.agent-next');
+      const dotsWrap = document.querySelector('.agent-carousel-dots');
+      if (!grid || !prevBtn) return;
+
+      const CARDS_PER_PAGE = 2;
+      const cards = Array.from(grid.querySelectorAll('.agent-icon-card')).filter(c => {
+        return getComputedStyle(c).display !== 'none' || !c.classList.contains('agent-icon-card');
+      });
+      const allCards = Array.from(grid.querySelectorAll('.agent-icon-card'));
+      const totalPages = Math.ceil(allCards.length / CARDS_PER_PAGE);
+      let current = 0;
+
+      for (let i = 0; i < totalPages; i++) {
+        const d = document.createElement('div');
+        d.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+        d.addEventListener('click', () => goTo(i));
+        dotsWrap.appendChild(d);
+      }
+
+      function goTo(page) {
+        if (window.innerWidth > 768) return;
+        current = Math.max(0, Math.min(page, totalPages - 1));
+        const start = current * CARDS_PER_PAGE;
+        allCards.forEach((c, i) => {
+          c.classList.toggle('agent-hidden', i < start || i >= start + CARDS_PER_PAGE);
+        });
+        dotsWrap.querySelectorAll('.carousel-dot').forEach((d, i) =>
+          d.classList.toggle('active', i === current));
+        prevBtn.disabled = current === 0;
+        nextBtn.disabled = current === totalPages - 1;
+      }
+
+      prevBtn.addEventListener('click', () => goTo(current - 1));
+      nextBtn.addEventListener('click', () => goTo(current + 1));
+
+      let tx = 0;
+      grid.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
+      grid.addEventListener('touchend', e => {
+        const diff = tx - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
+      });
+
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) allCards.forEach(c => c.classList.remove('agent-hidden'));
+        else goTo(current);
+      });
+
+      goTo(0);
+    })();
+
+    // ---- Profession cards carousel (mobile only) ----
+    (function() {
+      const grid     = document.querySelector('.prof-grid');
+      const prevBtn  = document.querySelector('.carousel-prev');
+      const nextBtn  = document.querySelector('.carousel-next');
+      const dotsWrap = document.querySelector('.carousel-dots');
+      if (!grid || !prevBtn) return;
+
+      const CARDS_PER_PAGE = 3;
+      const cards          = Array.from(grid.querySelectorAll('.prof-card'));
+      const totalPages     = Math.ceil(cards.length / CARDS_PER_PAGE);
+      let   current        = 0;
+
+      // Build dots
+      for (let i = 0; i < totalPages; i++) {
+        const d = document.createElement('div');
+        d.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+        d.addEventListener('click', () => goTo(i));
+        dotsWrap.appendChild(d);
+      }
+
+      function goTo(page) {
+        if (window.innerWidth > 900) return;
+        current = Math.max(0, Math.min(page, totalPages - 1));
+        const start = current * CARDS_PER_PAGE;
+        cards.forEach((c, i) =>
+          c.classList.toggle('carousel-hidden', i < start || i >= start + CARDS_PER_PAGE));
+        dotsWrap.querySelectorAll('.carousel-dot').forEach((d, i) =>
+          d.classList.toggle('active', i === current));
+        prevBtn.disabled = current === 0;
+        nextBtn.disabled = current === totalPages - 1;
+      }
+
+      prevBtn.addEventListener('click', () => goTo(current - 1));
+      nextBtn.addEventListener('click', () => goTo(current + 1));
+
+      // Touch swipe
+      let tx = 0;
+      grid.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
+      grid.addEventListener('touchend',   e => {
+        const diff = tx - e.changedTouches[0].clientX;
+        if (Math.abs(diff) > 40) goTo(diff > 0 ? current + 1 : current - 1);
+      });
+
+      // Show all cards on desktop resize
+      window.addEventListener('resize', () => {
+        if (window.innerWidth > 900) cards.forEach(c => c.classList.remove('carousel-hidden'));
+        else goTo(current);
+      });
+
+      goTo(0);
+    })();
+  </script>
+</body>
+</html>
