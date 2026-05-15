@@ -1283,9 +1283,7 @@ body {
 .whofor-section {
   padding: 80px 32px;
   background:
-    radial-gradient(ellipse 55% 50% at 100% 0%,   rgba(201, 168, 76, 0.25)  0%, transparent 65%),
     radial-gradient(ellipse 50% 45% at 0%   100%, rgba(60, 160, 220, 0.18)  0%, transparent 60%),
-    radial-gradient(ellipse 45% 40% at 0%   15%,  rgba(201, 168, 76, 0.18)  0%, transparent 55%),
     radial-gradient(ellipse 45% 40% at 95%  85%,  rgba(60, 160, 220, 0.15)  0%, transparent 55%),
     #F5F4F0;
 }
@@ -1776,6 +1774,18 @@ body {
     #000000;
 }
 
+.process-section--light {
+  background: #F5F4F0;
+}
+
+.process-section--light .process-headline {
+  color: #1C1A18;
+}
+
+.process-section--light .process-sub {
+  color: rgba(28,26,24,0.65);
+}
+
 .process-inner {
   max-width: 1140px;
   margin: 0 auto;
@@ -2058,10 +2068,10 @@ body {
 
 .agent-icon-box {
   position: absolute;
-  right: -8px;
-  bottom: -8px;
-  width: 120px;
-  height: 120px;
+  right: 12px;
+  top: 12px;
+  width: 80px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2070,12 +2080,28 @@ body {
   background: none;
 }
 
+.agent-card-top {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  position: relative;
+}
+
+.agent-card-num {
+  font-family: var(--font-sans);
+  font-size: 64px;
+  font-weight: 700;
+  color: rgba(192,144,112,0.35);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
 .agent-icon-label {
   font-family: var(--font-sans);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   color: #1C1A18;
-  line-height: 1.3;
+  line-height: 1.2;
   position: relative;
   z-index: 2;
 }
@@ -2206,6 +2232,7 @@ body {
 
 /* Mobile badge hidden on desktop */
 .final-cta-badge-mobile { display: none; }
+.final-cta-headline-mobile { display: none; }
 
 .final-cta-content {
   display: flex;
@@ -2353,7 +2380,9 @@ body {
   .agent-showcase-section, .pricing-section { padding: 60px 16px; }
 
   .final-cta-badge-mobile { display: inline-flex; margin: 24px auto 0; }
+  .final-cta-headline-mobile { display: block; color: var(--white); font-family: var(--font-serif); font-size: 28px; font-weight: 700; line-height: 1.3; letter-spacing: -0.02em; text-align: center; padding: 20px 24px 0; }
   .final-cta-content .hero-badge { display: none; }
+  .final-cta-content .final-cta-headline { display: none; }
   .final-cta-section { grid-template-columns: 1fr; }
   .final-cta-portrait { width: 100%; }
   .final-cta-img { width: 100%; height: auto; object-fit: cover; }
@@ -2409,12 +2438,12 @@ body {
 
 .agent-card-bullets li {
   font-family: var(--font-sans);
-  font-size: 18px;
+  font-size: 14px;
   color: rgba(28,26,24,0.72);
   display: flex;
   align-items: flex-start;
   gap: 7px;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 .acb-check {
